@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback - Speed Star Motors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-car-side"></i>
+            <span>SPEEDSTAR MOTORS</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="about.html">About Us</a>
+            <a href="Contact Us.html">Contact Us</a>
+            <a href="services.html">Services</a>
+            <a href="feedback-html.html">Feedback</a>
+            <a href="product.html">Product</a>
+        </div>
+    </nav>
+
+    <!-- Feedback Page Content -->
+    <div class="page-content">
+        <section class="feedback-container">
+            <h1 class="feedback-title">Your Feedback Matters</h1>
+            <p class="feedback-subtitle">Help us improve our services and share your Speedstar Motors experience</p>
+
+            <form class="feedback-form" action="#" method="POST">
+                <!-- Rating Section -->
+                <div class="form-section">
+                    <h3>Rate Your Experience</h3>
+                    <div class="rating-group">
+                        <div class="rating-item">
+                            <label>Customer Service</label>
+                            <div class="rating-stars">
+                                <input type="radio" id="cs5" name="customer-service" value="5">
+                                <label for="cs5" class="star">&#9733;</label>
+                                <input type="radio" id="cs4" name="customer-service" value="4">
+                                <label for="cs4" class="star">&#9733;</label>
+                                <input type="radio" id="cs3" name="customer-service" value="3">
+                                <label for="cs3" class="star">&#9733;</label>
+                                <input type="radio" id="cs2" name="customer-service" value="2">
+                                <label for="cs2" class="star">&#9733;</label>
+                                <input type="radio" id="cs1" name="customer-service" value="1">
+                                <label for="cs1" class="star">&#9733;</label>
+                            </div>
+                        </div>
+
+                        <div class="rating-item">
+                            <label>Vehicle Quality</label>
+                            <div class="rating-stars">
+                                <input type="radio" id="vq5" name="vehicle-quality" value="5">
+                                <label for="vq5" class="star">&#9733;</label>
+                                <input type="radio" id="vq4" name="vehicle-quality" value="4">
+                                <label for="vq4" class="star">&#9733;</label>
+                                <input type="radio" id="vq3" name="vehicle-quality" value="3">
+                                <label for="vq3" class="star">&#9733;</label>
+                                <input type="radio" id="vq2" name="vehicle-quality" value="2">
+                                <label for="vq2" class="star">&#9733;</label>
+                                <input type="radio" id="vq1" name="vehicle-quality" value="1">
+                                <label for="vq1" class="star">&#9733;</label>
+                            </div>
+                        </div>
+
+                        <div class="rating-item">
+                            <label>Overall Experience</label>
+                            <div class="rating-stars">
+                                <input type="radio" id="oe5" name="overall-experience" value="5">
+                                <label for="oe5" class="star">&#9733;</label>
+                                <input type="radio" id="oe4" name="overall-experience" value="4">
+                                <label for="oe4" class="star">&#9733;</label>
+                                <input type="radio" id="oe3" name="overall-experience" value="3">
+                                <label for="oe3" class="star">&#9733;</label>
+                                <input type="radio" id="oe2" name="overall-experience" value="2">
+                                <label for="oe2" class="star">&#9733;</label>
+                                <input type="radio" id="oe1" name="overall-experience" value="1">
+                                <label for="oe1" class="star">&#9733;</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feedback Text -->
+                <div class="form-section">
+                    <h3>Share Your Thoughts</h3>
+                    <textarea name="positive-feedback" placeholder="What did you love most about your experience?" rows="4" required></textarea>
+                    <textarea name="improvement-feedback" placeholder="How can we improve?" rows="4"></textarea>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="form-section">
+                    <h3>Optional Contact Information</h3>
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="tel" name="phone" placeholder="Phone" pattern="[0-9]{10}">
+                </div>
+
+                <!-- Permissions -->
+                <div class="form-section">
+                    <label class="checkbox">
+                        <input type="checkbox" name="updates">
+                        Send me updates and promotions
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="feature-feedback">
+                        Feature my feedback anonymously
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+
+            <div class="privacy-note">
+                <i class="fas fa-lock"></i>
+                <p>Your information is secure. Read our <a href="privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Speed Star Motors. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="form-validation.js"></script>
+</body>
+</html>
